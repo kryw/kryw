@@ -8,124 +8,189 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
-    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <style>
-    
         html,
         body {
-        font-family: 'Roboto', 'Helvetica', sans-serif;
-        font-weight: 400;}
+            font-family: 'Roboto', 'Helvetica', sans-serif;
+            font-weight: 400;
+        }
+
+        body{
+            background: #10171e;
+            background-image: url(https://cdn2.unrealengine.com/Fortnite%2FfnCreativeShare%2Ftheblock-1920x1080-e40d33ae925d03a46222da9f63010b5d889243bf.jpg);        
+            background-repeat-x: no-repeat;
+            background-repeat-y: no-repeat;
+        }
+
+        .block {
+            background: rgba(16, 23, 30, 0.95);
+            border: 1px solid #38444d;
+            padding: 5px;
+        }
+
+        .block-label {
+            color: rgba(255, 255, 255, 0.87);
+            font-weight: 700;
+        }
+
+        a {
+            color: #FFCC4D;
+        }
+        
+        .block table thead th {
+            color: rgba(255, 255, 255, 0.87);
+        }
+        .block table tbody td {
+            color: rgba(255, 255, 255, 0.87);
+        }
+        .block table tbody tr:nth-child(odd) {
+            background-color: rgba(33, 52, 72, .7);
+        }
     </style>
 </head>
 
-<body style="background: #10171e;">
+<body>
 
-    <label>ADVENTURE MAPS</label>
-    <table>
-        <thead>
-            <tr>
-                <th></th>
-                <th>Campaign</th>
-                <th>Name</th>
-                <th>Type</th>
-                <th>Difficulty</th>
-                <th>Code</th>
-                <th>Description</th>
-                <th>Trailer</th>
-            </tr>
-        </thead>
-        <tbody>
+    <div class="block">
+        <label class="block-label">ADVENTURE MAPS</label>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Campaign</th>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Difficulty</th>
+                    <th>Code</th>
+                    <th>Description</th>
+                    <th>Trailer</th>
+                </tr>
+            </thead>
+            <tbody>
 
 
-            <tr>
-                <td>1</td>
-                <td>n/a</td>
-                <td>4 Lamas Escape</td>
-                <td>Parkour</td>
-                <td>Medium</td>
-                <td>3604-0468-9853</td>
-                <td>Find the 4 lamas on this funny parkour</td>
-                <td>n/a</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Window Story 1/4</td>
-                <td>Prison Riot</td>
-                <td>Parkour</td>
-                <td>Medium/Hardcore</td>
-                <td>3958-9852-3835 (simplified) / 9994-8069-9406 (hardcore)</td>
-                <td>NokSs was jailed, try to escape from there during the riot</td>
-                <td>n/a</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Window Story 2/4</td>
-                <td>Prefab Factory</td>
-                <td>Adventure</td>
-                <td>Medium</td>
-                <td>9841-3089-1905</td>
-                <td>Investigate & Infiltrate the big Factory who created the terrific window</td>
-                <td>Link</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Window Story 3/4</td>
-                <td>Frozen Hell</td>
-                <td>Adventure</td>
-                <td>Hardcore</td>
-                <td>6010-1474-8119</td>
-                <td>Find the Demonic Spirit who corrupted NokSs !</td>
-                <td>Link</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>Window Story 4/4</td>
-                <td>Cursed Forest</td>
-                <td>Adventure</td>
-                <td>?</td>
-                <td>not available</td>
-                <td>?</td>
-                <td>n/a</td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>n/a</td>
-                <td>Hurricane : Sabotage</td>
-                <td>Adventure</td>
-                <td>Easy</td>
-                <td>0931-2027-9967</td>
-                <td>Destroy the army bots with your squad and get out !</td>
-                <td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td>n/a</td>
-                <td>Angry Chests</td>
-                <td>mini-game</td>
-                <td>Medium</td>
-                <td>8909-0798-8795</td>
-                <td>Destroy all Angry Chests and take bag the 10 Boumga Coins !</td>
-                <td>n/a</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <label>FFA MAPS</label>
-    <table>
-        <thead>
-            <tr>
-                <th></th>
-                <th>Name</th>
-                <th>Type</th>
-                <th>Code</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr><td>7</td><td>GoldenEye 007 Facility</td><td>Deathmatch</td><td>9696-9431-4874</td></tr>
-            <tr><td>8</td><td>Placid</td><td>Deathmatch</td><td>7275-8242-0228</td></tr>
-            <tr><td>9</td><td>Artic Station</td><td>Deathmatch</td><td>8557-8346-0505</td></tr>
-        </tbody>
-    </table>
+                <tr>
+                    <td>1</td>
+                    <td>n/a</td>
+                    <td>4 Lamas Escape</td>
+                    <td>Parkour</td>
+                    <td>Medium</td>
+                    <td><a href="https://epicgames.com/fn/3604-0468-9853" target="_blank" rel="noopener noreferrer">3604-0468-9853</a></td>
+                    <td>Find the 4 lamas on this funny parkour</td>
+                    <td>n/a</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Window Story 1/4</td>
+                    <td>Prison Riot</td>
+                    <td>Parkour</td>
+                    <td>Medium/Hardcore</td>
+                    <td><a href="https://epicgames.com/fn/3958-9852-3835" target="_blank" rel="noopener noreferrer">3958-9852-3835 (simplified)</a>  / <a href="https://epicgames.com/fn/9994-8069-9406" target="_blank" rel="noopener noreferrer">9994-8069-9406 (hardcore)</a> </td>
+                    <td>NokSs was jailed, try to escape from there during the riot</td>
+                    <td>n/a</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Window Story 2/4</td>
+                    <td>Prefab Factory</td>
+                    <td>Adventure</td>
+                    <td>Medium</td>
+                    <td><a href="https://epicgames.com/fn/9841-3089-1905" target="_blank" rel="noopener noreferrer">9841-3089-1905</a></td>
+                    <td>Investigate & Infiltrate the big Factory who created the terrific window</td>
+                    <td><a target="_BLANK" href="https://www.youtube.com/watch?v=pz9jPjFUBqM">Link</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Window Story 3/4</td>
+                    <td>Frozen Hell</td>
+                    <td>Adventure</td>
+                    <td>Hardcore</td>
+                    <td><a href="https://epicgames.com/fn/6010-1474-8119" target="_blank" rel="noopener noreferrer">6010-1474-8119</a></td>
+                    <td>Find the Demonic Spirit who corrupted NokSs !</td>
+                    <td><a target="_BLANK" href="https://www.youtube.com/watch?v=yDGzkuOr8OM">Link</a></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Window Story 4/4</td>
+                    <td>Cursed Forest</td>
+                    <td>Adventure</td>
+                    <td>?</td>
+                    <td>not available</td>
+                    <td>?</td>
+                    <td>n/a</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>n/a</td>
+                    <td>Hurricane : Sabotage</td>
+                    <td>Adventure</td>
+                    <td>Easy</td>
+                    <td><a href="https://epicgames.com/fn/0931-2027-9967" target="_blank" rel="noopener noreferrer">0931-2027-9967</a></td>
+                    <td>Destroy the army bots with your squad and get out !</td>
+                    <td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>n/a</td>
+                    <td>Angry Chests</td>
+                    <td>mini-game</td>
+                    <td>Medium</td>
+                    <td><a href="https://epicgames.com/fn/8909-0798-8795" target="_blank" rel="noopener noreferrer">8909-0798-8795</a></td>
+                    <td>Destroy all Angry Chests and take bag the 10 Boumga Coins !</td>
+                    <td>n/a</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="block">
+        <label class="block-label">FFA MAPS</label>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Code</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>7</td>
+                    <td>GoldenEye 007 Facility</td>
+                    <td>Deathmatch</td>
+                    <td><a href="https://epicgames.com/fn/9696-9431-4874" target="_blank" rel="noopener noreferrer">9696-9431-4874</a></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Placid</td>
+                    <td>Deathmatch</td>
+                    <td><a href="https://epicgames.com/fn/7275-8242-0228" target="_blank" rel="noopener noreferrer">7275-8242-0228</a></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Artic Station</td>
+                    <td>Deathmatch</td>
+                    <td><a href="https://epicgames.com/fn/8557-8346-0505" target="_blank" rel="noopener noreferrer">8557-8346-0505</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div style="
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    display: -ms-flexbox;
+    display: flex;
+    ">
+        <iframe src="https://player.twitch.tv/?channel=esl_kryw" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe><a href="https://www.twitch.tv/esl_kryw?tt_content=text_link&tt_medium=live_embed" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px; text-decoration:underline;">Regardez une vidéo en direct de ESL_kryw sur www.twitch.tv</a>
+        <iframe src="https://www.twitch.tv/embed/esl_kryw/chat" frameborder="0" scrolling="no" height="500" width="350"></iframe>
+    </div>
 </body>
 
 </html>
