@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Kryw's</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://static-cdn.jtvnw.net/jtv_user_pictures/esl_kryw-profile_image-32f84d973716b520-70x70.jpeg">
+
+    
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <style>
         html,
         body {
@@ -17,17 +19,30 @@
             font-weight: 400;
         }
 
+        html {
+            overflow-y: hidden!important;
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
         body{
             background: #10171e;
             background-image: url(https://cdn2.unrealengine.com/Fortnite%2FfnCreativeShare%2Ftheblock-1920x1080-e40d33ae925d03a46222da9f63010b5d889243bf.jpg);        
             background-repeat-x: no-repeat;
             background-repeat-y: no-repeat;
+            display: flex;
+            flex-direction: row;
+            overflow: hidden;
+            max-width: 100%;
+            max-height: 100%;
         }
 
         .block {
             background: rgba(16, 23, 30, 0.95);
-            border: 1px solid #38444d;
-            padding: 5px;
+            padding: 25px;
+            margin: 5px;
         }
 
         .block-label {
@@ -48,11 +63,51 @@
         .block table tbody tr:nth-child(odd) {
             background-color: rgba(33, 52, 72, .7);
         }
+        .layout-column{
+            flex-direction: column;
+        }
+        .layout-row{
+            flex-direction: row;
+        }
+        .layout-column,
+        .layout-row {
+            box-sizing: border-box;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
+        
+        .twitter-wrapper{
+            box-sizing: border-box;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            flex-direction: row;
+        }
+        .twitter-wrapper::-webkit-scrollbar,
+        .twitter-wrapper::-webkit-scrollbar:horizontal {
+            background: transparent;
+            width: 8px;
+            height: 4px;
+        }
+        .twitter-wrapper::-webkit-scrollbar-thumb {
+            background: #df5a49;
+            border-radius: 2px;
+        }
+        .twitter-wrapper::-webkit-scrollbar-thumb:window-inactive {
+            background: rgba(59, 227, 13, .4);
+        }
     </style>
 </head>
-
 <body>
-
+    <section class="twitter-wrapper layout-row" style="position: relative; overflow: auto;">
+        <a class="twitter-timeline"  data-tweet-limit="4" href="https://twitter.com/Kryw99"  data-widget-id="347008916514828288">Tweets by @Kryw99</a>
+    </section>
+    <section>
     <div class="block">
         <label class="block-label">ADVENTURE MAPS</label>
         <table>
@@ -177,9 +232,10 @@
             </tbody>
         </table>
     </div>
+    </section>
     <div style="
     margin: 0;
-    width: 100%;
+    width: 620px;
     min-height: 100%;
     height: 100%;
     flex-direction: row;
@@ -187,10 +243,24 @@
     box-sizing: border-box;
     display: -ms-flexbox;
     display: flex;
+    margin: 5px;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: space-between;
     ">
-        <iframe src="https://player.twitch.tv/?channel=esl_kryw" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe><a href="https://www.twitch.tv/esl_kryw?tt_content=text_link&tt_medium=live_embed" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px; text-decoration:underline;">Regardez une vidéo en direct de ESL_kryw sur www.twitch.tv</a>
-        <iframe src="https://www.twitch.tv/embed/esl_kryw/chat" frameborder="0" scrolling="no" height="500" width="350"></iframe>
+        <iframe src="https://player.twitch.tv/?channel=esl_kryw" frameborder="0" scrolling="no" height="378" width="620" allowfullscreen="true" ></iframe>
     </div>
 </body>
 
+<script>
+    !function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = p + "://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+    }(document, "script", "twitter-wjs");
+</script>
 </html>
